@@ -56,26 +56,33 @@
             flex: 1 1 220px;
             text-align: center;
         }
-        .hero-card {
-            background: #222;
-            color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-            max-width: 700px;
-            margin: 3rem auto 2rem auto;
-            padding: 3rem 2rem 2rem 2rem;
-            text-align: center;
+        .hero-header {
+            text-align: left;
+            padding: 6rem 0 3rem 8vw;
+            background: none;
+            color: #222;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        .hero-card h1 {
-            color: #fff;
-            font-size: 3rem;
+        .hero-header h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
-        .hero-card p {
-            color: #e0e0e0;
-            font-size: 1.3rem;
-        }    
+        .hero-header p {
+            font-size: 1.5rem;
+            color: #444;
+            margin: 0;
+        }
+        @media (max-width: 700px) {
+            .hero-header {
+                padding: 3rem 1rem 2rem 1rem;
+                text-align: center;
+            }
+            .hero-header h1 { font-size: 2rem; }
+            .hero-header p { font-size: 1.1rem; }
+        }            
         .publications-list, .awards-list {
             list-style: none;
             padding: 0;
@@ -119,7 +126,7 @@
     </style>
 </head>
 <body>
-    <header class="hero-card">
+    <header class="hero-header">
         <h1>Sha Sabahi</h1>
         <p>I specialize in designing intelligent, data-driven systems that redefine how architecture, engineering, and construction interact with digital tools. With deep expertise in computational and parametric design, I orchestrate cutting-edge fabrication workflows powered by Agent-AI, CAD/CAM/CAE integration, and knowledge management frameworks in BIM and CIM. My work focuses on delivering creative, high-performance solutions that optimize complexity through automation and insight.</p>
     </header>
